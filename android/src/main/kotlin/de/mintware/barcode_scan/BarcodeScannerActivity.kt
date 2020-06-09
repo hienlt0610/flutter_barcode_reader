@@ -77,11 +77,11 @@ class BarcodeScannerActivity : Activity(), ZXingScannerView.ResultHandler {
         if (scannerView?.flash == true) {
             buttonText = config.stringsMap["flash_off"]
         }
-        val flashButton = menu.add(0, TOGGLE_FLASH, 0, buttonText)
-        flashButton.setShowAsAction(MenuItem.SHOW_AS_ACTION_ALWAYS)
+//         val flashButton = menu.add(0, TOGGLE_FLASH, 0, buttonText)
+//         flashButton.setShowAsAction(MenuItem.SHOW_AS_ACTION_ALWAYS)
 
-        val cancelButton = menu.add(0, CANCEL, 0, config.stringsMap["cancel"])
-        cancelButton.setShowAsAction(MenuItem.SHOW_AS_ACTION_ALWAYS)
+//         val cancelButton = menu.add(0, CANCEL, 0, config.stringsMap["cancel"])
+//         cancelButton.setShowAsAction(MenuItem.SHOW_AS_ACTION_ALWAYS)
 
         return super.onCreateOptionsMenu(menu)
     }
